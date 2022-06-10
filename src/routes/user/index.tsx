@@ -5,6 +5,8 @@ import About from "../../pages/user/AboutUs";
 import Home from "../../pages/user/Home";
 import Dashboard from "../../pages/user/Dashboard";
 import PersonalRoutes from "./user";
+import Signin from "../../pages/user/Auth/Signin";
+import Signup from "../../pages/user/Auth/Signup";
 
 const UserRoutes = (
     <>
@@ -23,6 +25,18 @@ const UserRoutes = (
         <Route path="about" element={ 
                 <Middleware 
                     component={<About />} 
+                /> 
+            } 
+        />
+        <Route path="signin" element={ 
+                <Middleware 
+                    component={<Signin />} 
+                /> 
+            } 
+        />
+        <Route path="signup" element={ 
+                <Middleware 
+                    component={<Signup />} 
                 /> 
             } 
         />
